@@ -1,0 +1,2 @@
+debian/bin/cryptokend usr/bin
+src/cryptokend usr/lib/cryptoken
