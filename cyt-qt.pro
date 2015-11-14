@@ -1,14 +1,10 @@
-# Cryptoken Business Version
 TEMPLATE = app
 TARGET = Cryptoken-qt
 VERSION = 1.0.0.0
 INCLUDEPATH += src src/json src/qt src/zerocoin
 QT += core gui network
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
-DEFINES += QT_STATIC
-CONFIG += no_include_pwd
-CONFIG += thread
-CONFIG += static
+CONFIG += no_include_pwd thread static
 
 QMAKE_CXXFLAGS = -fpermissive
 
@@ -379,6 +375,7 @@ isEmpty(BOOST_LIB_SUFFIX) {
 }
 
 isEmpty(BOOST_THREAD_LIB_SUFFIX) {
+    #win32:BOOST_THREAD_LIB_SUFFIX = _win32$$BOOST_LIB_SUFFIX
     BOOST_THREAD_LIB_SUFFIX = $$BOOST_LIB_SUFFIX
 }
 
