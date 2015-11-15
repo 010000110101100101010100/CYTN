@@ -49,7 +49,7 @@ unsigned int nStakeMinAge = 3 * 60 * 60; // 3 hours
 unsigned int nStakeMaxAge = 8 * 24 * 60 * 60; // 8 days
 unsigned int nModifierInterval = 16 * 60; // 16 minutes
 
-int nCoinbaseMaturity = 60; // 70 in total count
+int nCoinbaseMaturity = 40; // 50 in total count
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 
@@ -1033,6 +1033,26 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
     else if(pindexBest->nHeight < 4200)
     {
         nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8) * 100;  // 1000% yearly interest
+    }
+    else if(pindexBest->nHeight < 30000)
+    {
+        nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8) * 3;  // 30% yearly interest
+    }
+    else if(pindexBest->nHeight < 32000)
+    {
+        nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8) * 15;  // 150% yearly interest
+    }
+    else if(pindexBest->nHeight < 34000)
+    {
+        nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8) * 20;  // 200% yearly interest
+    }
+    else if(pindexBest->nHeight < 35000)
+    {
+        nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8) * 40;  // 400% yearly interest
+    }
+    else if(pindexBest->nHeight < 40000)
+    {
+        nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8) * 6;  // 60% yearly interest
     }
 
     if (fDebug && GetBoolArg("-printcreation"))
