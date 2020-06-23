@@ -140,7 +140,7 @@
        <item row="17" column="0">
         <widget class="QLabel" name="inputLabel">
          <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 255);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Inputs:</string>
@@ -163,7 +163,7 @@
        <item row="14" column="0">
         <widget class="QLabel" name="valueLabel">
          <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 255);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Value out:</string>
@@ -173,7 +173,7 @@
        <item row="13" column="0">
         <widget class="QLabel" name="txLabel">
          <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 255);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Transaction ID:</string>
@@ -226,7 +226,7 @@
        <item row="9" column="0">
         <widget class="QLabel" name="hardLabel">
          <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 255);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Block Difficulty:</string>
@@ -253,7 +253,7 @@ color: rgb(255, 0, 0);</string>
        <item row="3" column="0">
         <widget class="QLabel" name="heightLabel_2">
          <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 255);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Block Height:</string>
@@ -283,7 +283,7 @@ color: rgb(255, 0, 0);</string>
        <item row="5" column="0">
         <widget class="QLabel" name="merkleLabel">
          <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 255);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Block Merkle:</string>
@@ -293,7 +293,7 @@ color: rgb(255, 0, 0);</string>
        <item row="4" column="0">
         <widget class="QLabel" name="hashLabel">
          <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 255);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Block Hash:</string>
@@ -313,7 +313,7 @@ color: rgb(255, 0, 0);</string>
        <item row="10" column="0">
         <widget class="QLabel" name="pawLabel">
          <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 255);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Block Hashrate:</string>
@@ -333,7 +333,7 @@ color: rgb(255, 0, 0);</string>
        <item row="15" column="0">
         <widget class="QLabel" name="feesLabel">
          <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 255);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Fees:</string>
@@ -343,7 +343,7 @@ color: rgb(255, 0, 0);</string>
        <item row="7" column="0">
         <widget class="QLabel" name="bitsLabel">
          <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 255);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Block nBits:</string>
@@ -379,7 +379,7 @@ color: rgb(255, 0, 0);</string>
        <item row="16" column="0">
         <widget class="QLabel" name="outputLabel">
          <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 255);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Outputs:</string>
@@ -405,7 +405,7 @@ color: rgb(255, 0, 0);</string>
        <item row="6" column="0">
         <widget class="QLabel" name="nonceLabel">
          <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 255);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Block nNonce:</string>
@@ -425,7 +425,7 @@ color: rgb(255, 0, 0);</string>
        <item row="8" column="0">
         <widget class="QLabel" name="timeLabel">
          <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 255);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>Block Timestamp:</string>
