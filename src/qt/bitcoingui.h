@@ -5,12 +5,6 @@
 #include <QSystemTrayIcon>
 
 #include <stdint.h>
-#include "radio.h"
-#include "bitcointalk.h"
-#include "twitter.h"
-#include "bittrex.h"
-#include "cryptsy.h"
-#include "yobit.h"
 
 class TransactionTableModel;
 class ClientModel;
@@ -80,12 +74,6 @@ private:
 #ifdef ENABLE_TRADE_REQUIRE_QT5
     tradingDialog *tradingDialogPage;
 #endif
-//    Radio *radioPage;
-//    Bitcointalk *bitcointalkPage;
-//    Twitter *twitterPage;
-//    Bittrex *bittrexPage;
-//    Cryptsy *cryptsyPage;
-//    Yobit *yobitPage;
     QWidget *transactionsPage;
     AddressBookPage *addressBookPage;
     AddressBookPage *receiveCoinsPage;
@@ -107,12 +95,6 @@ private:
 #ifdef ENABLE_TRADE_REQUIRE_QT5
     QAction *TradingAction;
 #endif
-//    QAction *radioAction;
-//    QAction *bitcointalkAction;
-//    QAction *twitterAction;
-//    QAction *bittrexAction;
-//    QAction *cryptsyAction;
-//    QAction *yobitAction;
     QAction *historyAction;
     QAction *quitAction;
     QAction *sendCoinsAction;
@@ -188,18 +170,6 @@ private slots:
     /** Switch to trading page */
     void gotoTradingPage();
 #endif
-//    /** Switch to radio page */
-//    void gotoRadioPage();
-//    /** Switch to bitcointalk page */
-//    void gotoBitcointalkPage();
-//    /** Switch to twitter page */
-//    void gotoTwitterPage();
-//    /** Switch to bittrex page */
-//    void gotoBittrexPage();
-//    /** Switch to cryptsy page */
-//    void gotoCryptsyPage();
-//    /** Switch to yobit page */
-//    void gotoYobitPage();
     /** Switch to history (transactions) page */
     void gotoHistoryPage();
     /** Switch to address book page */

@@ -23,12 +23,6 @@
 #ifdef ENABLE_TRADE_REQUIRE_QT5
 #include "tradingdialog.h"
 #endif
-//#include "radio.h"
-//#include "bitcointalk.h"
-//#include "twitter.h"
-//#include "bittrex.h"
-//#include "cryptsy.h"
-//#include "yobit.h"
 #include "bitcoinunits.h"
 #include "guiconstants.h"
 #include "askpassphrasedialog.h"
@@ -124,12 +118,6 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     tradingDialogPage = new tradingDialog(this);
     tradingDialogPage->setObjectName("tradingDialog");
 #endif
-//    radioPage = new Radio(this);
-//    bitcointalkPage = new Bitcointalk(this);
-//    twitterPage = new Twitter(this);
-//    bittrexPage = new Bittrex(this);
-//    cryptsyPage = new Cryptsy(this);
-//    yobitPage = new Yobit(this);
 
     transactionsPage = new QWidget(this);
     QVBoxLayout *vbox = new QVBoxLayout();
@@ -150,12 +138,6 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 #ifdef ENABLE_TRADE_REQUIRE_QT5
     centralWidget->addWidget(tradingDialogPage);
 #endif
-//    centralWidget->addWidget(radioPage);
-//    centralWidget->addWidget(bitcointalkPage);
-//    centralWidget->addWidget(twitterPage);
-//    centralWidget->addWidget(bittrexPage);
-//    centralWidget->addWidget(cryptsyPage);
-//    centralWidget->addWidget(yobitPage);
     centralWidget->addWidget(transactionsPage);
     centralWidget->addWidget(addressBookPage);
     centralWidget->addWidget(receiveCoinsPage);
@@ -264,42 +246,6 @@ void BitcoinGUI::createActions()
     TradingAction->setProperty("objectName","TradingAction");
     tabGroup->addAction(TradingAction);
 #endif
-
-//    radioAction = new QAction(QIcon(":/icons/cryptoken"), tr("&Radio"), this);
-//    radioAction->setToolTip(tr("Hip Hop"));
-//    radioAction->setCheckable(true);
-//    radioAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
-//    tabGroup->addAction(radioAction);
-    
-//    bitcointalkAction = new QAction(QIcon(":/icons/cryptoken"), tr("&Bitcointalk"), this);
-//    bitcointalkAction->setToolTip(tr("Bitcointalk"));
-//    bitcointalkAction->setCheckable(true);
-//    bitcointalkAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_7));
-//    tabGroup->addAction(bitcointalkAction);
-
-//    twitterAction = new QAction(QIcon(":/icons/cryptoken"), tr("&Twitter"), this);
-//    twitterAction->setToolTip(tr("Twitter"));
-//    twitterAction->setCheckable(true);
-//    twitterAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_8));
-//    tabGroup->addAction(twitterAction);
-
-//    bittrexAction = new QAction(QIcon(":/icons/cryptoken"), tr("&Bittrex"), this);
-//    bittrexAction->setToolTip(tr("Bittrex"));
-//    bittrexAction->setCheckable(true);
-//    bittrexAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_0));
-//    tabGroup->addAction(bittrexAction);
-
-//    cryptsyAction = new QAction(QIcon(":/icons/cryptoken"), tr("&Cryptsy"), this);
-//    cryptsyAction->setToolTip(tr("Cryptsy"));
-//    cryptsyAction->setCheckable(true);
-//    cryptsyAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_1));
-//    tabGroup->addAction(cryptsyAction);
-
-//    yobitAction = new QAction(QIcon(":/icons/cryptoken"), tr("&Yobit"), this);
-//    yobitAction->setToolTip(tr("Yobit"));
-//    yobitAction->setCheckable(true);
-//    yobitAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_2));
-//    tabGroup->addAction(yobitAction);
     
     sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send coins"), this);
     sendCoinsAction->setToolTip(tr("Send coins to a Cryptoken address"));
@@ -339,18 +285,6 @@ void BitcoinGUI::createActions()
 #ifdef ENABLE_TRADE_REQUIRE_QT5
     connect(TradingAction, SIGNAL(triggered()), this, SLOT(gotoTradingPage()));
 #endif
-//    connect(radioAction, SIGNAL(triggered()), this, SLOT(gotoRadioPage()));
-//    connect(radioAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
-//    connect(bitcointalkAction, SIGNAL(triggered()), this, SLOT(gotoBitcointalkPage()));
-//    connect(bitcointalkAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
-//    connect(twitterAction, SIGNAL(triggered()), this, SLOT(gotoTwitterPage()));
-//    connect(twitterAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
-//	  connect(bittrexAction, SIGNAL(triggered()), this, SLOT(gotoBittrexPage()));
-//    connect(bittrexAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
-//    connect(cryptsyAction, SIGNAL(triggered()), this, SLOT(gotoCryptsyPage()));
-//    connect(cryptsyAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
-//    connect(yobitAction, SIGNAL(triggered()), this, SLOT(gotoYobitPage()));
-//    connect(yobitAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(sendCoinsAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(sendCoinsAction, SIGNAL(triggered()), this, SLOT(gotoSendCoinsPage()));
     connect(receiveCoinsAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
@@ -453,23 +387,6 @@ void BitcoinGUI::createMenuBar()
     QMenu *blockbrowser = appMenuBar->addMenu(tr("&Block Browser"));
     blockbrowser->addAction(blockAction);
 
-//    QMenu *radio = appMenuBar->addMenu(tr("&Radio"));
-//    radio->addAction(radioAction);
-
-//    QMenu *social = appMenuBar->addMenu(tr("&Social"));
-//    social->addAction(bitcointalkAction);
-//    social->addSeparator();
-//    social->addAction(twitterAction);
-//    social->addSeparator();
-//    social->addAction(chatAction);
-
-//    QMenu *trade = appMenuBar->addMenu(tr("&Trade"));
-//    trade->addAction(bittrexAction);
-//    trade->addSeparator();
-//    trade->addAction(cryptsyAction);
-//    trade->addSeparator();
-//    trade->addAction(yobitAction);
-
     QMenu *trading = appMenuBar->addMenu(tr("&Trading"));
 
     QMenu *Shop = appMenuBar->addMenu(tr("&Shop"));
@@ -506,12 +423,6 @@ void BitcoinGUI::createToolBars()
 //#ifdef ENABLE_TRADE_REQUIRE_QT5
 //    toolbar->addAction(TradingAction);
 //#endif
-//    toolbar->addAction(radioAction);
-//    toolbar->addAction(bitcointalkAction);
-//    toolbar->addAction(twitterAction);
-//    toolbar->addAction(bittrexAction);
-//    toolbar->addAction(cryptsyAction);
-//    toolbar->addAction(yobitAction);
 //    toolbar->addAction(sendCoinsAction);
 //    toolbar->addAction(receiveCoinsAction);
 //    toolbar->addAction(historyAction);
@@ -918,59 +829,6 @@ void BitcoinGUI::gotoTradingPage()
   //  disconnect(exportAction, SIGNAL(triggered()), 0, 0);
 }
 #endif
-
-//void BitcoinGUI::gotoRadioPage()
-//{
-//    radioAction->setChecked(true);
-//    centralWidget->setCurrentWidget(radioPage);
-//
-//    exportAction->setEnabled(false);
-//    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
-//}
-
-//void BitcoinGUI::gotoBitcointalkPage()
-//{
-//    bitcointalkAction->setChecked(true);
-//    centralWidget->setCurrentWidget(bitcointalkPage);
-//
-//    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
-//}
-
-//void BitcoinGUI::gotoTwitterPage()
-//{
-//    twitterAction->setChecked(true);
-//    centralWidget->setCurrentWidget(twitterPage);
-//
-//    exportAction->setEnabled(false);
-//    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
-//}
-
-//void BitcoinGUI::gotoBittrexPage()
-//{
-//    bittrexAction->setChecked(true);
-//    centralWidget->setCurrentWidget(bittrexPage);
-//
-//    exportAction->setEnabled(false);
-//    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
-//}
-
-//void BitcoinGUI::gotoCryptsyPage()
-//{
-//    cryptsyAction->setChecked(true);
-//    centralWidget->setCurrentWidget(cryptsyPage);
-//
-//    exportAction->setEnabled(false);
-//    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
-//}
-
-//void BitcoinGUI::gotoYobitPage()
-//{
-//    yobitAction->setChecked(true);
-//    centralWidget->setCurrentWidget(yobitPage);
-//
-//    exportAction->setEnabled(false);
-//    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
-//}
 
 void BitcoinGUI::gotoHistoryPage()
 {
