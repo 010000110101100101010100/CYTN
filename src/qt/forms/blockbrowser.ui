@@ -76,10 +76,10 @@
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color: rgb(255, 0, 0);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20px; font-weight:600; color:#B40F14;&quot;&gt;Block Explorer &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20px; font-weight:600; color:#ffffff;&quot;&gt;Block Explorer &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -130,7 +130,7 @@
        <item row="12" column="1">
         <widget class="QPushButton" name="txButton">
          <property name="styleSheet">
-          <string notr="true">color: rgb(255, 0, 0);</string>
+          <string notr="true">color: rgb(0, 255, 0);</string>
          </property>
          <property name="text">
           <string>Decode Transaction</string>
@@ -153,7 +153,7 @@
        <item row="10" column="1">
         <widget class="QLabel" name="pawBox">
          <property name="styleSheet">
-          <string notr="true">color: rgb(255, 0, 0);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>0000 KH/s</string>
@@ -183,7 +183,7 @@
        <item row="9" column="1">
         <widget class="QLabel" name="hardBox">
          <property name="styleSheet">
-          <string notr="true">color: rgb(255, 0, 0);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>0.00</string>
@@ -193,7 +193,7 @@
        <item row="13" column="1">
         <widget class="QLabel" name="txID">
          <property name="styleSheet">
-          <string notr="true">color: rgb(255, 0, 0);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>000</string>
@@ -203,7 +203,7 @@
        <item row="17" column="1">
         <widget class="QLabel" name="inputBox">
          <property name="styleSheet">
-          <string notr="true">color: rgb(255, 0, 0);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string/>
@@ -216,7 +216,7 @@
        <item row="14" column="1">
         <widget class="QLabel" name="valueBox">
          <property name="styleSheet">
-          <string notr="true">color: rgb(255, 0, 0);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string/>
@@ -243,7 +243,7 @@
          </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(255, 0, 0);</string>
+color: rgb(255, 255, 255);</string>
          </property>
          <property name="maximum">
           <number>99999999</number>
@@ -263,7 +263,7 @@ color: rgb(255, 0, 0);</string>
        <item row="8" column="1">
         <widget class="QLabel" name="timeBox">
          <property name="styleSheet">
-          <string notr="true">color: rgb(255, 0, 0);;</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>0</string>
@@ -273,7 +273,7 @@ color: rgb(255, 0, 0);</string>
        <item row="1" column="1">
         <widget class="QPushButton" name="blockButton">
          <property name="styleSheet">
-          <string notr="true">color: rgb(255, 0, 0);</string>
+          <string notr="true">color: rgb(0, 255, 0);</string>
          </property>
          <property name="text">
           <string>Jump to Block</string>
@@ -303,7 +303,7 @@ color: rgb(255, 0, 0);</string>
        <item row="15" column="1">
         <widget class="QLabel" name="feesBox">
          <property name="styleSheet">
-          <string notr="true">color: rgb(255, 0, 0);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string/>
@@ -323,7 +323,7 @@ color: rgb(255, 0, 0);</string>
        <item row="3" column="1">
         <widget class="QLabel" name="heightLabel">
          <property name="styleSheet">
-          <string notr="true">color: rgb(255, 0, 0);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>0</string>
@@ -353,7 +353,7 @@ color: rgb(255, 0, 0);</string>
        <item row="7" column="1">
         <widget class="QLabel" name="bitsBox">
          <property name="styleSheet">
-          <string notr="true">color: rgb(255, 0, 0);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>0</string>
@@ -369,7 +369,7 @@ color: rgb(255, 0, 0);</string>
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">color: rgb(255, 0, 0);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>0x0</string>
@@ -392,7 +392,7 @@ color: rgb(255, 0, 0);</string>
        <item row="16" column="1">
         <widget class="QLabel" name="outputBox">
          <property name="styleSheet">
-          <string notr="true">color: rgb(255, 0, 0);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string/>
@@ -415,7 +415,7 @@ color: rgb(255, 0, 0);</string>
        <item row="6" column="1">
         <widget class="QLabel" name="nonceBox">
          <property name="styleSheet">
-          <string notr="true">color: rgb(255, 0, 0);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>0</string>
@@ -450,7 +450,7 @@ color: rgb(255, 0, 0);</string>
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">color: rgb(255, 0, 0);</string>
+          <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>0x0</string>
@@ -467,7 +467,7 @@ color: rgb(255, 0, 0);</string>
          </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(255, 0, 0);</string>
+color: rgb(255, 255, 255);</string>
          </property>
          <property name="inputMask">
           <string comment="Transaction id" extracomment="Transaction id"/>
